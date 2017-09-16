@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header,
+#form-add-note {
+    margin-bottom: 1.5em;
+}
+
+#content {
+    padding-bottom: 1.5em;
+}
+
+#notes ul,
+#notes li {
+    list-style: none;
+}
+
+#notes li {
+    cursor: pointer;
+    padding: 0.625em;
+}
+
+#notes li:hover {
+    background-color: #607d8b;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    padding: 1.25em;
+}
+
+h1,
+p {
+    padding: 1.25em 0;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+p {
+    font-size: 1em;
+}
+
+input {
+    font: inherit;
+    padding: 0.625em 1.25em;
+}
+
+
+/** Muito Pequeno **/
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+.row {
+    display: flex;
+}
+
+.col-1 {
+    flex-grow: 1;
+}
+
+.col-2 {
+    flex-grow: 2;
+}
+
+
+/** Pequeno **/
+
+@media(min-width: 576px) {
+    .container {
+        max-width: 33.75em;
+    }
+}
+
+
+/** Médio **/
+
+@media(min-width: 760px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+
+/** Grande **/
+
+@media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+
+/** Muito Grande **/
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
