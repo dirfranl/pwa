@@ -7,7 +7,7 @@ let filesToCache = [
     'js/object.observer.polyfill.js',
     'js/array.observe.polyfill.js',
     'js/scripts.js',
-    'firebase-messaging-sw.js'
+    './firebase-messaging-sw.js'
 ];
 
 self.addEventListener('install', function (e) {
