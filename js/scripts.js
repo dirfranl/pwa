@@ -1,4 +1,5 @@
 //let tem scopo menos global que o var que vai ser descontinuado
+// jshint esversion:6
 let notes = window.localStorage.getItem('notes') || '{ "data": [] }';
 notes = JSON.parse(notes);
 
@@ -45,7 +46,7 @@ let updateList = function () {
 
         window.localStorage.setItem('notes', JSON.stringify(notes));
     });
-}
+};
 
 let createNote = function () {
     let input = document.querySelector('#form-add-note input[type="text"]');
@@ -54,7 +55,7 @@ let createNote = function () {
     notes.data.push(value);
 
     input.value = "";
-}
+};
 
 updateList();
 

@@ -1,3 +1,5 @@
+// jshint esversion:6
+
 let cacheName = 'notes-son.v.1.0.0';
 let filesToCache = [
     './',
